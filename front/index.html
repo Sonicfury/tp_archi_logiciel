@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>Exercice1</title>
+</head>
+<body>
+<form id="test-form">
+    <label for="lastname">Lastname</label>
+    <input placeholder="Lastname" id="lastname" name="lastname" type="text">
+    <label for="firstname">Firstname</label>
+    <input placeholder="Firstname" id="firstname" name="firstname" type="text">
+    <label for="tel">Tel</label>
+    <input placeholder="0611223344" id="tel" name="tel" maxlength="10" pattern="^0[0-9]{9}" type="text">
+    <label for="email">Email</label>
+    <input placeholder="email@email.com" id="email" name="email" type="email">
+    <button id="validate-button" type="submit">Validate</button>
+</form>
+<div id="result">
+
+</div>
+</body>
+<script src="main.js"></script>
+</html>
