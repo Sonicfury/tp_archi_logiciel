@@ -1,6 +1,6 @@
 const validateButton = document.getElementById('validate-button');
 const result = document.getElementById('result');
-const BASE_URI = 'http://localhost/TP_IHAB_04-mai/coursArchitectureAP2019/exercice1/';
+const BASE_URI = 'http://localhost/TP_IHAB_04-mai/exercice1/';
 
 validateButton.addEventListener('click', function (e) {
     e.preventDefault();
@@ -11,7 +11,6 @@ validateButton.addEventListener('click', function (e) {
 
     const config = {
         method : 'POST',
-        mode: 'cors',
         body : "lastname="+lastName.value
             +"&firstname="+firstName.value
             +"&tel="+tel.value
@@ -24,10 +23,7 @@ validateButton.addEventListener('click', function (e) {
         return response.json()
     }).then(res => {
         result.innerHTML = '';
-        result.innerHTML += res.name + " "
-            + res.firstname + " "
-            + res.tel + " "
-            + res.email;
+        result.innerHTML += res.message;
     })
 });
 
