@@ -2,23 +2,23 @@ html {
   font-family: Arial, sans-serif;
 }
 
-#test-form {
+.user-form {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   width: 40vw;
 }
-#test-form input {
+.user-form input {
   margin: 2vh 0;
 }
-#test-form input:not(:placeholder-shown):invalid {
+.user-form input:not(:placeholder-shown):invalid {
   border: 2px solid red;
 }
-#test-form button {
+.user-form button {
   padding: 15px;
   font-weight: bold;
 }
-#test-form button:hover {
+.user-form button:hover {
   cursor: pointer;
   filter: brightness(80%);
 }

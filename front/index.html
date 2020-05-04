@@ -9,7 +9,8 @@
     <title>Exercice1</title>
 </head>
 <body>
-<form id="test-form">
+<form class="user-form" id="add-user-form">
+    <h1>add a user</h1>
     <label for="lastname">Lastname</label>
     <input placeholder="Lastname" id="lastname" name="lastname" type="text">
     <label for="firstname">Firstname</label>
@@ -18,11 +19,32 @@
     <input placeholder="0611223344" id="tel" name="tel" maxlength="10" pattern="^0[0-9]{9}" type="text">
     <label for="email">Email</label>
     <input placeholder="email@email.com" id="email" name="email" type="email">
-    <button id="validate-button" type="submit">Validate</button>
+    <button id="validate-button" type="submit">Add user</button>
 </form>
-<div id="result">
+<div class="result" id="request-result">
 
 </div>
+<form class="user-form" id="get-user">
+    <h1>Get the list</h1>
+    <button id="get-users-button" type="submit">
+        Get list of users
+    </button>
+</form>
+<div class="result" id="users-list-container">
+    <ul id="users-list">
+
+    </ul>
+</div>
+<form class="user-form" id="delete-form">
+    <h1>Delete a user !</h1>
+    <label for="id-to-delete">the id of the user you wish to delete</label>
+    <input type="text" placeholder="1" id="id-to-delete" name="id-to-delete">
+    <button id="delete-user-button" type="submit">Delete</button>
+</form>
+<form class="user-form" id="delete-form">
+    <h1>Delete all!</h1>
+    <button id="delete-all-users-button" type="submit">Empty List</button>
+</form>
 </body>
 <script src="main.js"></script>
 </html>
